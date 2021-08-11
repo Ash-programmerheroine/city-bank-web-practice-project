@@ -22,6 +22,8 @@ body{
     min-height: 100vh;
     width: 100%;
 }
+/*====== side Menu bar ===
+======================== */
 .side-bar{
     position: fixed;
     top:0;
@@ -76,14 +78,13 @@ body{
     background-color: #e20001;
     text-decoration: none;
 }
-/*------ header ----
---------- ---------*/
+/*==== header =====
+===================*/
 #page-content{
     position: relative;
     width: calc(100% - 250px);
-    margin-left:auto;
-    
-   z-index: 1000;
+    margin-left:auto; 
+    z-index: 1000;
 }
 #page-content .top-navigation{
     position: fixed;
@@ -113,7 +114,8 @@ body{
     color:#fff;
     transition: all .4s ease;
 }
-/* carousel sec */
+/* ====== carousel sec=====
+=========================== */
 
 .main-slider-sec{width: calc(100% - 250px);
     margin-left:auto;
@@ -156,7 +158,7 @@ body{
     margin: 0;
     color: rgba(60, 60, 60, .87);
 }
-.form-control{   
+.form-group .form-control{   
      padding: .375rem .75rem;
     background: #eaeaea;
     padding: 10px 42px;
@@ -178,3 +180,40 @@ body{
     font-size: .875rem;color: #e20001!important;
     text-decoration: underline !important;
 }
+/* =============
+transaction Area
+================ */
+#transaction-area{
+padding-top:100px;
+display:none;
+}
+#transaction-area h1{
+    margin-bottom: 50px;
+}
+#deposit{
+ background-color: brown;
+ color:#fff;
+ padding: 24px;
+}
+#withdrawal{
+    background-color: blueviolet;
+    color:#fff;
+    padding: 24px;
+}
+#balance{
+    background-color: cadetblue;
+    color:#fff;
+    padding: 24px;
+}
+#deposit, #withdrawal, #balance{
+    margin: 0 20px;
+    border-radius: 6px;
+}
+.deposit-area, .withdraw-area{
+    padding:26px;
+    margin-top:60px;
+    box-shadow: 5px 5px 18px gray ;
+    border-radius: 5px;
+}
+span{font-size: 1.875rem;}
+
